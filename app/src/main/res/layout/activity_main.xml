@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/txtSatu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Harga Produk 1 : " />
+
+            <EditText
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:ems="3"
+                android:focusable="false"
+                android:text="20000"/>
+
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:onClick="kurangqty"
+                android:padding="2dp"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/qtydan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:focusable="false"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:onClick="tambahqty"
+                android:padding="2dp"
+                android:text="+" />
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Hasil :"
+                />
+            <EditText
+                android:id="@+id/hasil"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:focusable="false"
+                android:text="0"
+               />
+
+        </LinearLayout>
+
+    <!--    DUA PRODUK-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/txtdua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Harga Produk 2 : "
+                />
+            <EditText
+                android:id="@+id/harga2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:ems="3"
+                android:focusable="false"
+                android:text="30000"
+                />
+            <Button
+                android:onClick="kurangqty2"
+                android:id="@+id/minus2"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:padding="2dp"
+                android:text="-" />
+            <EditText
+                android:id="@+id/qtydan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:focusable="false"
+                android:inputType="number"
+                />
+            <Button
+                android:id="@+id/plus2"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:padding="2dp"
+                android:onClick="tambahqty2"
+                android:text="+" />
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Hasil :"
+                />
+            <EditText
+                android:id="@+id/hasil2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="0"
+                />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/hasias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Hasil Semua"
+            android:inputType="number"
+            />
+    <EditText
+        android:id="@+id/hasilsemua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="0"
+        android:inputType="number"
+        />
+            <TextView
+                android:id="@+id/tanggaldani"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/jamdani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                />
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
